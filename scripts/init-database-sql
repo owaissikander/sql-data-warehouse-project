@@ -1,0 +1,33 @@
+ 
+--==========================================
+--THIS QUERY CREATE NEW DATABASE AND SCHEMA
+--==========================================
+/*
+WARNING: 
+		Please look at this query dont blinding go with the all qeury otherwise you
+		lose all the data in your database
+
+*/
+/*
+IF EXISTS(SELECT 1 FROM sys.databases where name =  'DataWarehouse')  
+BEGIN
+		ALTER DATABASE DataWarehouse set SINGLE_USER WITH ROLLBACK IMMEDIATE;
+		DROP DATABASE DataWarehouse
+END;
+*/
+
+
+
+--CREATE DATABASE DataWarehouse
+--use DataWarehouse
+/*
+CREATE SCHEMA bronze;
+GO
+CREATE SCHEMA silver;
+GO
+CREATE SCHEMA gold;
+GO
+*/
+
+
+
